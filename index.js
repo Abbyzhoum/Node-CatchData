@@ -1,5 +1,5 @@
 const fs = require('fs')
-const request = require('request')
+// const request = require('request')        
 const cheerio = require('cheerio')
 const superagent = require('superagent')
 const userAgent = require('./src/userAgent.js')
