@@ -1,0 +1,17 @@
+{
+  "name": "Python-CatchData",
+  "version": "1.0",
+  "main": "",
+  "repository": "https://github.com/Abbyzhoum/Python-CatchData.git",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "log4js": "^2.10.0",
+    "moment": "^2.22.2",
+    "request": "^2.87.0",
+    "superagent": "^3.8.3"
+  },
+  "scripts": {
+    "dev": "node index.js"
+  }
+}
