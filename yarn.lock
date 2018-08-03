@@ -415,6 +415,13 @@ ftp@~0.3.10:
     readable-stream "1.1.x"
     xregexp "2.0.0"
 
+gbk@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gbk/-/gbk-0.1.0.tgz#80acd7da3679bb8c3e8e935bc5021abf4683d5de"
+  dependencies:
+    iconv-lite "*"
+    request "*"
+
 generate-function@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/generate-function/-/generate-function-2.0.0.tgz#6858fe7c0969b7d4e9093337647ac79f60dfbe74"
@@ -549,15 +556,15 @@ https-proxy-agent@^2.2.1:
     agent-base "^4.1.0"
     debug "^3.1.0"
 
-iconv-lite@0.4.15:
-  version "0.4.15"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
-
-iconv-lite@0.4.23:
+iconv-lite@*, iconv-lite@0.4.23, iconv-lite@^0.4.16:
   version "0.4.23"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.23.tgz#297871f63be507adcfbfca715d0cd0eed84e9a63"
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
+
+iconv-lite@0.4.15:
+  version "0.4.15"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
 
 inflection@~1.12.0:
   version "1.12.0"
@@ -926,6 +933,10 @@ pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
+punycode@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
+
 punycode@1.4.1, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
@@ -937,6 +948,10 @@ qs@^6.5.1, qs@~6.5.1:
 qs@~6.2.0:
   version "6.2.3"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.3.tgz#1cfcb25c10a9b2b483053ff39f5dfc9233908cfe"
+
+querystring@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
 raw-body@^2.2.0:
   version "2.3.3"
@@ -995,6 +1010,31 @@ redis@^2.7.1:
     redis-commands "^1.2.0"
     redis-parser "^2.6.0"
 
+request@*, request@^2.0.0, request@^2.74.0, request@^2.87.0:
+  version "2.87.0"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.87.0.tgz#32f00235cd08d482b4d0d68db93a829c0ed5756e"
+  dependencies:
+    aws-sign2 "~0.7.0"
+    aws4 "^1.6.0"
+    caseless "~0.12.0"
+    combined-stream "~1.0.5"
+    extend "~3.0.1"
+    forever-agent "~0.6.1"
+    form-data "~2.3.1"
+    har-validator "~5.0.3"
+    http-signature "~1.2.0"
+    is-typedarray "~1.0.0"
+    isstream "~0.1.2"
+    json-stringify-safe "~5.0.1"
+    mime-types "~2.1.17"
+    oauth-sign "~0.8.2"
+    performance-now "^2.1.0"
+    qs "~6.5.1"
+    safe-buffer "^5.1.1"
+    tough-cookie "~2.3.3"
+    tunnel-agent "^0.6.0"
+    uuid "^3.1.0"
+
 request@2.75.x:
   version "2.75.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.75.0.tgz#d2b8268a286da13eaa5d01adf5d18cc90f657d93"
@@ -1020,31 +1060,6 @@ request@2.75.x:
     stringstream "~0.0.4"
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
-
-request@^2.0.0, request@^2.74.0, request@^2.87.0:
-  version "2.87.0"
-  resolved "https://registry.yarnpkg.com/request/-/request-2.87.0.tgz#32f00235cd08d482b4d0d68db93a829c0ed5756e"
-  dependencies:
-    aws-sign2 "~0.7.0"
-    aws4 "^1.6.0"
-    caseless "~0.12.0"
-    combined-stream "~1.0.5"
-    extend "~3.0.1"
-    forever-agent "~0.6.1"
-    form-data "~2.3.1"
-    har-validator "~5.0.3"
-    http-signature "~1.2.0"
-    is-typedarray "~1.0.0"
-    isstream "~0.1.2"
-    json-stringify-safe "~5.0.1"
-    mime-types "~2.1.17"
-    oauth-sign "~0.8.2"
-    performance-now "^2.1.0"
-    qs "~6.5.1"
-    safe-buffer "^5.1.1"
-    tough-cookie "~2.3.3"
-    tunnel-agent "^0.6.0"
-    uuid "^3.1.0"
 
 requestretry@^1.2.2:
   version "1.13.0"
@@ -1185,6 +1200,12 @@ strip-ansi@^3.0.0:
   dependencies:
     ansi-regex "^2.0.0"
 
+superagent-charset@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/superagent-charset/-/superagent-charset-1.2.0.tgz#9eeba5a9275f6f1cd3d6b13861f94463f3c3a348"
+  dependencies:
+    iconv-lite "^0.4.16"
+
 superagent@^3.8.3:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/superagent/-/superagent-3.8.3.tgz#460ea0dbdb7d5b11bc4f78deba565f86a178e128"
@@ -1249,6 +1270,13 @@ underscore@~1.7.0:
 unpipe@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+
+url@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
+  dependencies:
+    punycode "1.3.2"
+    querystring "0.2.0"
 
 util-deprecate@~1.0.1:
   version "1.0.2"
